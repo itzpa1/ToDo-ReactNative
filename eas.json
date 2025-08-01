@@ -1,0 +1,25 @@
+{
+  "cli": {
+    "version": ">= 16.17.4",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "CONVEX_DEPLOYMENT": "dev:ardent-pika-192",
+        "EXPO_PUBLIC_CONVEX_URL": "https://ardent-pika-192.convex.cloud"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
